@@ -16,7 +16,7 @@ var svg = d3.select("#scatter")
 svg.append("g").attr("class", "xText");
 var xText = d3.select(".xText");
 
-// x axis text
+// x text
 var bottomTextX =  (width - labelArea)/2 + labelArea;
 var bottomTextY = height - margin - padding;
 xText.attr("transform",`translate(
@@ -30,7 +30,7 @@ xText.append("text")
     .attr("class","aText active x")
     .text("In Poverty (%)");
 
-// y axis text
+// y text
 svg.append("g").attr("class", "yText");
 var yText = d3.select(".yText");
 var leftTextX =  margin + padding;
